@@ -1,4 +1,5 @@
-#softmax回归
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 
 import tensorflow as tf
 import tensorflow.examples.tutorials.mnist.input_data as input_data
@@ -28,6 +29,7 @@ for i in range(1000):  #循环训练1000次
       sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})  # 用这些数据点作为参数替换之前的占位符来运行
 
 # 评估模型
-correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
-accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+accuracy = tf.reduce_mean(tf.cast(
+      tf.equal(tf.argmax(y,1), tf.argmax(y_,1)), 
+      "float"))
 print sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels})
