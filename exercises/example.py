@@ -5,19 +5,21 @@ import numpy as np
 x_data = np.random.rand(500).astype(np.float32)
 y_data = x_data * 0.1 + 0.3
 
-# crea tensor flow structure
+# 图
+# 变量
 Weight = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 biases = tf.Variable(tf.zeros([1]))
 
 y = x_data * Weight + biases
 
+# op 节点
 loss = tf.reduce_mean(tf.square(y - y_data))
 optimizer = tf.train.GradientDescentOptimizer(0.5)
 train = optimizer.minimize(loss)
 
 init = tf.global_variables_initializer()
 
-
+# sessions
 sess = tf.Session()
 sess.run(init)
 
