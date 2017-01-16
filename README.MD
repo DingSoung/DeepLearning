@@ -1,7 +1,7 @@
 ---
 title: 深度学习整理
 date:	2017.01.03
-tags: [C,C++]
+tags: [TensorFlow,DeepLearning]
 ---
 
 # 环境
@@ -36,4 +36,4 @@ source deactivate
 ```
 
 * TensBoard可视化  
- <http://127.0.0.1:6006>
+`python tensorflow/tensorboard/tensorboard.py --logdir=path/to/log-directory`
