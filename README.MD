@@ -18,7 +18,7 @@ ipython notebook
 ```bash
 sudo easy_install pip
 ```
-## TensFlow
+## TensorFlow
 * 安装
 ```bash
  pip install tensorflow
@@ -34,6 +34,5 @@ source activate tensorflow
 # 关闭
 source deactivate
 ```
-
 * TensBoard可视化  
 `python tensorflow/tensorboard/tensorboard.py --logdir=path/to/log-directory`
