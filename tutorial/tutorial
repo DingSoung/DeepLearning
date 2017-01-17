@@ -1,0 +1,12 @@
+---
+title: 深度学习整理
+date:	2017.01.017
+tags: [TensorFlow,keras,DeepLearning]
+---
+
+#keras介绍
+Keras是一个高层神经网络库，Keras由纯Python编写而成并基Tensorflow或Theano。
+
+#keras中文文档链接
+https://keras-cn.readthedocs.io/en/latest/
+
