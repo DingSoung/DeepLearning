@@ -5,6 +5,7 @@ tags:[DeepLearning,TensorFlow]
 ---
 
 # [TensorFlow](https://www.tensorflow.org/how_tos/using_gpu/#supported_devices)
+
 ## Environment
 1. Python & pip  
     go to [python](https://www.python.org) to install Python, use follow command install pip
@@ -18,7 +19,6 @@ tags:[DeepLearning,TensorFlow]
     ```
 3. Anaconda 、Ipython notebook etc.
     go to [continuum](https://www.continuum.io) to install Anaconda
-
 ## Basic Usage    
 * active ipython:
     ```
@@ -43,3 +43,5 @@ tags:[DeepLearning,TensorFlow]
     ```
 
 ## [Exercises](exercises/)
+
+## [tutorial](tutorial/)
