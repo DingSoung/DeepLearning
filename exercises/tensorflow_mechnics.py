@@ -228,7 +228,7 @@ def main(_):
 
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # 判断是否是在直接运行该.py文件
   parser = argparse.ArgumentParser()
   parser.add_argument(
       '--learning_rate',
@@ -278,7 +278,6 @@ if __name__ == '__main__':
       help='If true, uses fake data for unit testing.',
       action='store_true'
   )
-
   FLAGS, unparsed = parser.parse_known_args()
   tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
 
