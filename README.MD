@@ -1,9 +1,3 @@
----
-title:深度学习整理
-date:2017.01.03
-tags:[DeepLearning,TensorFlow]
----
-
 # [TensorFlow](https://www.tensorflow.org/how_tos/using_gpu/#supported_devices)
 
 ## Environment
