@@ -36,6 +36,7 @@
           |———— train(训练)
     Session(会话)
     ```
+
 ## 用法
 
 1. 基本结构
@@ -47,7 +48,7 @@
     ```
     见例子[helloworld](helloworld.py)
 
-2. 使用 "with" 代码块在Session使用完后自动关闭以释放资源
+2. 使用 `with` 代码块在Session使用完后自动关闭以释放资源
 
     ```python
     with tf.Session() as sess:
