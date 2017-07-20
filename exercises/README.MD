@@ -15,8 +15,8 @@
   ```shell
   virtualenv --system-site-packages ~/tensorflow
   source ~/tensorflow/bin/activate
-  pip install --upgrade tensorflow-gpu
-  // or pip install --upgrade tensorflow
+  pip install --upgrade tensorflow
+  // or pip install --upgrade tensorflow-gpu
   ```
 
 ## 基本  
@@ -31,19 +31,7 @@
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
     ```
-
-## 代码
-1. [helloworld](helloworld.py)
-2. [basic_usage](basic_usage.py)
-3. [variables_state](variables_state.py)
-4. [feed](feed.py)
-5. [interactive_session](interactive_session.py)
-6. [example](example.py)
-7. [softmax](softmax.py)
-8. [softmax_advanced](softmax_advanced.py)
-9. [softmax_convolution](softmax_convolution.py)
-10. [tensorflow_mechnics](tensorflow_mechnics.py)
-
+  
 ## 分类
 * Session执行Graph
     ```
