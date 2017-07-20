@@ -1,5 +1,5 @@
 ## 环境
-* Python & pip  
+* python & pip
   go to [python](https://www.python.org) to install Python, use follow command install pip  
   ```bash
   sudo easy_install pip
@@ -8,17 +8,19 @@
 * virtualenv
     ```shell
     pip install --upgrade virtualenv
-    virtualenv --system-site-packages ~/tensorflow
     ```
 
-* Active & deactivate tensorflow
+* tensorflow
 
   ```shell
+  virtualenv --system-site-packages ~/tensorflow
   source ~/tensorflow/bin/activate
-  deactivate
+  pip install --upgrade tensorflow-gpu
+  // or pip install --upgrade tensorflow
   ```
 
 ## 基本  
+
 * 执行代码
     ```bash
     python helloworld.py
@@ -30,7 +32,7 @@
     # -*- coding: utf-8 -*-
     ```
 
-### 代码
+## 代码
 1. [helloworld](helloworld.py)
 2. [basic_usage](basic_usage.py)
 3. [variables_state](variables_state.py)
@@ -80,7 +82,7 @@
 4. [`InteractiveSession`交互式](interactive_session.py)  
     *其实就是一个公共变量保存状态（很奇怪怎么保证线程安全)*
 
-### Other
+## Other
 - Anaconda 、Ipython notebook etc.~~
   go to [continuum](https://www.continuum.io) to install Anaconda
 - active ipython:
