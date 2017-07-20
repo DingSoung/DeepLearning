@@ -8,15 +8,14 @@ import numpy as np
 x_data = np.random.rand(500).astype(np.float32)
 y_data = x_data * 0.1 + 0.3
 
-# 结构 y = W * x + b
+# y = W * x + b模型
 W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 b = tf.Variable(tf.zeros([1]))
 y = x_data * W + b
 
 # 配置优化器
 loss = tf.reduce_mean(tf.square(y_data - y))
-optimizer = tf.train.GradientDescentOptimizer(0.5)
-train = optimizer.minimize(loss)
+train = tf.train.GradientDescentOptimizer(0.5).minimize(loss)
 
 # 初始化变量 并循环训练
 sess = tf.Session() 
