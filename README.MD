@@ -1,3 +1,3 @@
-## [TensorFlow Note and exercises source codes](exercises/)
+## [TensorFlow Note and exercises source codes](tensorflow/)
 
-## [Deep Learning resources](tutorial/)
+## [Deep Learning resources](resources/)
